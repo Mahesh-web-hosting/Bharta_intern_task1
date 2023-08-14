@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Video Conference</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <body style="background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(74, 233, 167) 24.5%, rgb(70, 237, 179) 66%);">
+    <div class="intro">
+        <h1>Welcome to Super Video Conferencing Website!</h1>
+        <h2>For all your professional and personal needs!</h2>
+        
+        <a href="{% url 'login' %}" class="button">Sign In</a>
+        <a href="{% url 'register' %}" class="button">Sign Up</a>
+    </div>
+  </body>
+</head>
+</html>
